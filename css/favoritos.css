@@ -1,0 +1,76 @@
+body{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+
+h1{
+    text-align: center;
+}
+
+.btn__ir__peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+
+.peliculas__favoritas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+@media screen and (min-width:768px){
+    .peliculas__favoritas{
+        flex-direction: row;
+       
+    }
+}
+
+
+.coleccion__peliculas__card{
+    margin:0 0 50px 0;
+    width: 320px;
+    height: 500px;
+}
+
+
+.coleccion__peliculas__card img{
+    width: 97%;
+    height: 65%;
+}
+
+h3{
+    font-size: 1rem;
+}
+@media screen and (min-width:1024px){
+    .coleccion__peliculas__card{
+        width: 230px;
+    }
+    h3{
+        font-size: .62rem;
+    }
+}
+
+
+
+.boton{
+    background-color: lime;
+    color: black;
+}
+
+@media screen and (min-width:768px){
+    .boton:hove{
+        opacity: 0.5;
+    }
+}
+
+.boton__red{
+    background-color: darkred;
+    color: floralwhite;
+}

@@ -1,0 +1,96 @@
+body{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.header h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bienvenida__usuario {
+    padding-left: 0.5rem;
+}
+
+.buscador {
+    margin-bottom: 50px;
+}
+
+.coleccion__peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+@media screen and (min-width:768px){
+
+    .coleccion__peliculas{
+
+        flex-direction: row;
+    }
+}
+.coleccion__peliculas__card {
+    margin:0 0 50px 0;
+    width: 320px;
+    height: 500px;
+}
+
+@media screen and (min-width:1024px){
+    .coleccion__peliculas__card{
+        width: 230px;
+    }
+    h3{
+        font-size: .62rem;
+    }
+}
+
+.coleccion__peliculas__card img{
+    width: 97%;
+    height: 65%;
+}
+
+.id {
+    display: none;
+}
+
+@media screen and (min-width:600px) {
+    .header {
+        flex-direction: row;
+    }
+    .header h1 {
+        width: 50%;
+    }
+    .login {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+}
+
+.boton{
+    background-color: lime;
+    color: black;
+}
+
+@media screen and (min-width:768px){
+    .boton:hover{
+        opacity: 0.5;
+    }
+}

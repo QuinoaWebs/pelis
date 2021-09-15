@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/peliculas.css">
+    <title>Películas</title>
+
+</head>
+
+<body>
+
+    <!-- grid con todas las películas -->
+
+    <header class="header" id="header">
+        <h1>Listado de Películas</h1>
+        <div class="login" id="login">
+            <p>Bienvenid@<span class="bienvenida__usuario" id="bienvenidaUsuario"></span></p>
+            <input type="button" value="LogOut" class="btn__logout boton" id="btnLogout">
+            <input type="button" value="Ir Favoritos" class="btn__favoritos  boton" id="btnFavoritos">
+        </div>
+    </header>
+    <main>
+        <section class="buscador" id="buscador">
+            <form class="form__search" id="formulario">
+                <h2>buscar...</h2>
+                <input type="text" name="buscar" id="buscar">
+
+            </form>
+
+        </section>
+        <section class="coleccion__peliculas" id="coleccionPeliculas">
+
+            <!-- <article class="coleccion__peliculas__card" id="coleccionPeliculasCard">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg " alt=" ">
+                <h3>Batman</h3>
+                <p>año</p>
+                <p class="id" id="id">"tt0096895</p>
+                <a href="#">Añadir a Favoritos....</a>
+            </article> -->
+
+
+        </section>
+
+    </main>
+    <script src="/js/peliculas.js "></script>
+</body>
+
+</html>
