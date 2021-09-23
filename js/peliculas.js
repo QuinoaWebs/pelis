@@ -8,6 +8,8 @@ const password = query.get('password')
 
 
 
+console.log(nombre)
+
 if (nombre == 'joaquin' && password == '123') {
     const user = {
         nombre,
@@ -56,7 +58,7 @@ d.addEventListener('DOMContentLoaded', () => {
     const traerDatosApi = async() => {
 
         try {
-            const res = await fetch('http://www.omdbapi.com/?s=star trek&apikey=d236c93c')
+            const res = await fetch('https://www.omdbapi.com/?s=star trek&apikey=d236c93c')
             const data = await res.json()
             const datos = data.Search
             peliculas(datos)
